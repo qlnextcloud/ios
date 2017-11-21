@@ -5,6 +5,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### [2.19.0] - 2017-xx-xx
+#### Added
+- Support of End-To-End-Encryption (e2e)
+
 ### [2.18.3] - 2017-xx-xx
 
 ## [2.18.2] - 2017-11-07
