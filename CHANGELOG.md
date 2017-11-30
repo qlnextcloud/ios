@@ -8,6 +8,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### [2.19.0] - 2017-xx-xx
 #### Added
 - Support of End-To-End-Encryption (e2e)
+#### Changed
+- New App icon
 
 ### [2.18.3] - 2017-xx-xx
 
