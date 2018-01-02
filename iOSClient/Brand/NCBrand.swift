@@ -63,7 +63,16 @@ class NCBrandColor: NSObject {
         let instance = NCBrandOptions()
         return instance
     }()
-    
+
+    @objc public let brand:                           String = "MicroCloud"
+    @objc public let mailMe:                          String = "i.sshe@foxmail.com"
+    @objc public let textCopyrightNextcloudiOS:       String = "MicroCloud for iOS %@ © 2017 qilun Inc."
+    @objc public let textCopyrightNextcloudServer:    String = "Microcloud Server %@"
+    @objc public let loginBaseUrl:                    String = "https://cloud.microcloud.com"
+    @objc public let pushNotificationServer:          String = "https://push-notifications.microcloud.com"
+    @objc public let linkLoginProvider:               String = "https://microcloud.com/providers"
+    @objc public let textLoginProvider:               String = "_login_bottom_label_"
+    /*
     @objc public let brand:                           String = "Nextcloud"
     @objc public let mailMe:                          String = "ios@nextcloud.com"
     @objc public let textCopyrightNextcloudiOS:       String = "Nextcloud for iOS %@ © 2017 T.W.S. Inc."
@@ -72,6 +81,7 @@ class NCBrandColor: NSObject {
     @objc public let pushNotificationServer:          String = "https://push-notifications.nextcloud.com"
     @objc public let linkLoginProvider:               String = "https://nextcloud.com/providers"
     @objc public let textLoginProvider:               String = "_login_bottom_label_"
+    */
     @objc public let middlewarePingUrl:               String = ""
     @objc public let webLoginAutenticationProtocol:   String = ""
     @objc public let webCloseViewProtocol:            String = ""
@@ -81,7 +91,8 @@ class NCBrandColor: NSObject {
     @objc public var folderDefaultAutoUpload:         String = "Photos"
     
     // Capabilities Group
-    @objc public let capabilitiesGroups:              String = "group.it.twsweb.Crypto-Cloud"
+    //@objc public let capabilitiesGroups:              String = "group.it.twsweb.Crypto-Cloud"
+    @objc public let capabilitiesGroups:              String = "group.com.qilun.Crypto-Cloud"
     
     // Options
     @objc public let use_login_web:                   Bool = false

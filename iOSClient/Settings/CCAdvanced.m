@@ -53,7 +53,7 @@
     if ([CCUtility getActivityVerboseHigh]) row.value = @"1";
     else row.value = @"0";
     [section addFormRow:row];
-    
+    /*
     row = [XLFormRowDescriptor formRowDescriptorWithTag:@"sendMailActivity" rowType:XLFormRowDescriptorTypeButton title:NSLocalizedString(@"_help_activity_mail_", nil)];
     [row.cellConfig setObject:@(NSTextAlignmentLeft) forKey:@"textLabel.textAlignment"];
     [row.cellConfig setObject:[UIColor blackColor] forKey:@"textLabel.textColor"];
@@ -61,7 +61,7 @@
     [row.cellConfig setObject:[UIImage imageNamed:@"settingsSendActivity"] forKey:@"imageView.image"];
     row.action.formSelector = @selector(sendMail:);
     [section addFormRow:row];
-
+     */
     row = [XLFormRowDescriptor formRowDescriptorWithTag:@"clearActivityLog" rowType:XLFormRowDescriptorTypeButton title:NSLocalizedString(@"_help_activity_clear_", nil)];
     [row.cellConfig setObject:[UIFont systemFontOfSize:15.0]forKey:@"textLabel.font"];
     [row.cellConfig setObject:[UIColor blackColor] forKey:@"textLabel.textColor"];

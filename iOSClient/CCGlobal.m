@@ -25,7 +25,8 @@
 
 // Directory on Group
 NSString *const appApplicationSupport = @"Library/Application Support";
-NSString *const appDatabaseNextcloud = @"Library/Application Support/Nextcloud";
+//NSString *const appDatabaseNextcloud = @"Library/Application Support/Nextcloud";
+NSString *const appDatabaseNextcloud = @"Library/Application Support/MicroCloud";
 NSString *const appCertificates = @"Library/Application Support/Certificates";
 
 // webDAV & DAV
