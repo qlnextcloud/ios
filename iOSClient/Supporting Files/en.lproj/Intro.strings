@@ -27,10 +27,13 @@
 "_intro_11_text_"   = "Swipe → or ←: Options \n\nLong touch: Copy/Paste or Open in… \n\nPress: 3D Touch (when available)";
 
 "_intro_2_title_"   = "Multi account";
-"_intro_2_text_"    = "Connect to all your clouds and touch the Nextcloud logo on the Files tab to switch between them";
+//"_intro_2_text_"    = "Connect to all your clouds and touch the Nextcloud logo on the Files tab to switch between them";
+"_intro_2_text_"    = "Connect to all your clouds and touch the MicroCloud logo on the Files tab to switch between them";
 
 "_intro_3_title_"   = "Start";
-"_intro_3_text_"    = "Good, your Nextcloud is ready for use. Further information, news and contact-information to be found on https://nextcloud.com";
+//"_intro_3_text_"    = "Good, your Nextcloud is ready for use. Further information, news and contact-information to be found on https://nextcloud.com";
+"_intro_3_text_"    = "Good, your MicroCloud is ready for use.";
 
 "_introNoCryptoCloud_1_title_" = "Crypto Cloud";
-"_introNoCryptoCloud_1_text_"  = "Crypto Cloud encryption protocol is no longer available, you can still decrypt your files by downloading the free app from AppStore\n\n'CryptoCloud for Nextcloud'\n\nSoon there will be a new EndToEnd protocol available on all Nextcloud clients\n\n\nTap to Start";
+//"_introNoCryptoCloud_1_text_"  = "Crypto Cloud encryption protocol is no longer available, you can still decrypt your files by downloading the free app from AppStore\n\n'CryptoCloud for Nextcloud'\n\nSoon there will be a new EndToEnd protocol available on all Nextcloud clients\n\n\nTap to Start";
+"_introNoCryptoCloud_1_text_"  = "Crypto Cloud encryption protocol is no longer available\n\n\nTap to Start";
