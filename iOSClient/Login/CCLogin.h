@@ -60,6 +60,8 @@ typedef enum {
 
 @property (nonatomic, weak) IBOutlet UIButton *login;
 @property (nonatomic, weak) IBOutlet UIButton *annulla;
+@property (weak, nonatomic) IBOutlet UIButton *scanBtn;
+
 @property (nonatomic, weak) IBOutlet UIButton *toggleVisiblePassword;
 
 @property enumLoginType loginType;

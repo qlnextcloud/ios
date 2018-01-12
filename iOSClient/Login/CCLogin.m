@@ -26,11 +26,14 @@
 #import "CCUtility.h"
 #import "NCBridgeSwift.h"
 #import "NCNetworkingSync.h"
+#import "CCScanViewController.h"
 
 @interface CCLogin ()
 {
     UIView *rootView;
 }
+
+@property (nonatomic, strong) CCScanViewController *scanVC;
 @end
 
 @implementation CCLogin
@@ -176,7 +179,6 @@
 {
     self.login.enabled = NO;
     self.loadingBaseUrl.hidden = NO;
-    
     // Check whether baseUrl contain protocol. If not add https:// by default.
     if(![self.baseUrl.text hasPrefix:@"https"] && ![self.baseUrl.text hasPrefix:@"http"]) {
       self.baseUrl.text = [NSString stringWithFormat:@"https://%@",self.baseUrl.text];
@@ -428,6 +430,22 @@
     self.password.text = @"";
     self.password.text = currentPassword;
     self.password.defaultTextAttributes = @{NSFontAttributeName: [UIFont systemFontOfSize:14.0f], NSForegroundColorAttributeName: [UIColor darkGrayColor]};
+}
+
+- (IBAction)handleScanQRCode:(id)sender {
+    //读取.storyboard 视图
+    CCScanViewController *scanViewController  = [[UIStoryboard storyboardWithName:@"CCScanViewController" bundle:nil] instantiateViewControllerWithIdentifier:@"scanStoryboard"];
+
+    __weak typeof(self) weakSelf = self;
+    //获取扫码值
+    scanViewController.resultBlock = ^(NSString *str) {
+        weakSelf.baseUrl.text = str;
+        // verify URL
+        if ([weakSelf.baseUrl.text length] > 0)
+            [weakSelf testUrl];
+    };
+    
+    [self presentViewController:scanViewController animated:YES completion:nil];
 }
 
 @end

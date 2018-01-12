@@ -220,6 +220,9 @@
 "_error_multidomain_"           = "Address not allowed, only the following domains are valid:";
 "_account_already_exists_"      = "The account %@ already exists";
 
+//Scan
+"_please_align_QR_code_"        ="Please align the scan area with the QR code";
+
 // Favorite
 
 "_favorites_"                   = "Favorites";
